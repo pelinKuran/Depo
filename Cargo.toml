@@ -17,3 +17,10 @@ tracing-subscriber = { version ="^0.3", features = ["env-filter"] }
 futures ="^0.3"
 env_logger = "^0.9"
 log = "^0.4"
+migration = { path = "migration" }
+[dependencies.sea-orm-migration]
+version = "^0"
+features = [
+    "runtime-tokio-native-tls",
+    "sqlx-postgres"
+]
